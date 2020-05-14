@@ -14,6 +14,9 @@ public class TestDriver {
 		//New Way with Builder Pattern
 		
 		PersonDTO personDTO = new PersonBuilder().setFirstName("Keyur").setLastName("Thakor").setEmail("keyurjava27@gmail.com").setMobileNo("8600712124").getPerson();
+		StringBuilder s = new StringBuilder();
+		s.append("keyur").append(1).append(true);
+		String s1 = s.toString(); 
 		System.out.println(personDTO);
 	}
 
