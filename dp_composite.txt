@@ -1,0 +1,53 @@
+
+
+	Quatation -1
+		Category1 -2
+			items - leaf
+		Category2 -3
+			items - leaf
+		
+
+		
+			
+
+
+
+	Shape -- Base Component
+
+	Circle  -- Leaf
+	Square -- Leaf
+
+	DrawingCompositeObject
+		|
+	Circle		Square
+
+
+
+	
+		price();
+			Computer
+		|
+	Cabinate		CPU		PR
+	  |
+	 MB				Mouse , Keyboard
+
+
+	computer.price();
+
+	pr.price();
+
+		Base component / either interface or abstact class
+		
+		Leaf Node implements or extends Base component 
+		
+		Composite Object implements or extends Base component
+	
+		List<BaseComponent> list;
+
+		add();			
+	
+		remove();
+		
+		clear();
+	
+		
