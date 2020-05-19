@@ -1,0 +1,47 @@
+
+
+	Adaptor -- Current Code compatible with old code
+
+	Bridge -- Current code should not affect existing code
+
+		Abstraction - Shape
+		
+		Implementor - Color
+
+		
+			Shape
+		|		|
+	Rectangle		Circle	
+
+					Color + applyColor(); +removeColor()
+				|		|		|
+				RedColor		GreenColor	OrangeColor	
+
+		abstract class Shape {
+			protected Color color; //Implementor
+			Shape(Color c){
+				this.color = c;
+			}		
+			applyColor();
+		}
+		
+		clss Rectangle extends Shape{
+			Rectangle(Color c){
+				super(c)
+			}
+			applyColor(){
+				color.applyColor();
+			}			
+		}		
+
+		main(){
+			Shape sh1 = new Rectange(new RedColor());
+			sh1.applyColor();
+
+			
+		}
+	
+					
+	
+	
+		
