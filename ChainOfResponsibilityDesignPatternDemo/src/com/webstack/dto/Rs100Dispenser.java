@@ -22,8 +22,6 @@ public class Rs100Dispenser implements AtmMoneyChain {
 			System.out.println("Dispaching "+noOfNotes+" of 100 Rs.");
 			if(remainingAmt != 0) {
 				this.chain.dispense(new Currency(remainingAmt));
-			}else {
-				this.chain.dispense(currency);
 			}
 		}
 	}

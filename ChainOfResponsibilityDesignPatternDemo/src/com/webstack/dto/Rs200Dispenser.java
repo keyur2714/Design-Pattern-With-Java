@@ -22,8 +22,6 @@ private AtmMoneyChain chain;
 			System.out.println("Dispaching "+noOfNotes+" of 200 Rs.");
 			if(remainingAmt != 0) {
 				this.chain.dispense(new Currency(remainingAmt));
-			}else {
-				this.chain.dispense(currency);
 			}
 		}else {			
 			System.out.println("200");

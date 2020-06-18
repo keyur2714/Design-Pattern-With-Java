@@ -23,8 +23,6 @@ public class Rs2000Dispenser implements AtmMoneyChain {
 			System.out.println("Remainig Amount ."+remainingAmt);
 			if(remainingAmt != 0) {
 				this.chain.dispense(new Currency(remainingAmt));
-			}else {
-				this.chain.dispense(currency);
 			}
 		}else {
 			this.chain.dispense(currency);
